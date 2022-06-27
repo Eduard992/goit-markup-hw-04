@@ -234,6 +234,7 @@ body {
     align-items: center;
     margin-bottom: 30px;
     background-color: var(--third-bg-color);
+    border-radius: 4px;
 
 }
 
@@ -427,24 +428,29 @@ body {
     align-items: center;
     width: 170px;
     height: 92px;
-    outline: 1px solid #AFB1B8;
-    border-radius: 4px;
 }
 
 
-.clients-icon {
-    fill: #AFB1B8;
-}
 
-.clients-icon:hover,
-.clients-icon:focus {
-    fill: var(--hover-txt-color);
-}
-
-.clients-item {
+.clients-link {
+    display: flex;
     justify-content: center;
     align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: #AFB1B8;
+
 }
+
+.clients-link:hover,
+.clients-link:focus {
+    fill: var(--hover-txt-color);
+    border: 1px solid var(--hover-txt-color);
+}
+
+
 
 /* footer */
 .main {
